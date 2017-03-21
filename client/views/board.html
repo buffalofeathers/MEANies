@@ -1,0 +1,78 @@
+
+<script src="script.js"></script>
+<div id="navbar" class="container-fluid">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+                <img src="images/mario.ico" class="mariologo" alt="" id="logo">
+                
+                <a href="/" class="navbar-brand"><img src="images/MEANiesNav.png"></a>
+                
+                <h4 id="userInfo">Welcome {{ username | uppercase }}, Progress: {{ progress }}</h4>
+                
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/login"><img id="loginNav" src="images/LoginNav.png"></a></li>
+                    <li><a href="/logout"><img id="logoutNav" src="images/LogoutNav.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>  
+
+<div id="cmon" class="container-fluid">
+    <div id="box">
+        <div>
+            <div id="counter">
+                <img class="mario" src="images/mario.ico">
+                <img class="dot" id="dot" src="images/circle.png">
+                <img src="map/map3.1.png">
+                <!--<a href="/mongo_boss"><button id="mongo" class="door"><img src="/images/Door.gif"></button></a>
+                <a href="/express_boss"><button id="express" class="door"><img src="/images/Door.gif"></button></a>
+                <a href="/angular_boss"><button id="angular" class="door"><img src="/images/Door.gif"></button></a>
+                <a href="/node_boss"><button id="node" class="door"><img src="/images/Door.gif"></button></a>-->
+            </div>
+            <div>
+                <div ng-repeat="question in questions">
+                        <!--<h1>{{ question.question }}</h1>-->
+                    <div id="{{ question.id }}" class="attacktwo dot" ng-style="{ 'left': question.Xcoord + '%', 'top': question.Ycoord + '%' }" ng-click="circleClicked($event)">
+                        <img class="attacktwo dot" ng-src="{{ question.imageurl }}">
+                    </div>
+                </div>
+                <div id="door" ng-repeat="door in doors" ng-style="{ 'left': door.Xcoord + '%', 'top': door.Ycoord + '%' }" ng-click="doorClicked($event)">
+                    <img ng-src="{{ door.imageurl }}">
+                </div>        
+            </div>
+        </div>
+    </div>
+            
+    <div class="newbox" ng-show="showingDetails" ng-click="toggleDetails()">
+        <div>
+            
+            <h1 class='battle'>{{ question.id }}.{{ question.category | uppercase }}: {{ question.question }}</h1>
+                <div id="boardinquiry" class='boardinquiry'>
+                <ol type="A">
+                    <li>{{ question.A }}</li>
+                    <li>{{ question.B }}</li>
+                    <li>{{ question.C }}</li>
+                    <li>{{ question.D }}</li>
+                </ol>
+                <!--<input type="text" class="answer" placeholder="answer" autofocus>-->
+                <div class="question" ng-mouseover="query()"><img src="images/ATTACK.png"></div>
+            </div>
+        </div>            
+    </div> 
+            <!--</button>-->
+            
+</div>
+
+
+    <!--ng-repeat="battle in battlelist"-->

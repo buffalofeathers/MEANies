@@ -1,0 +1,36 @@
+{
+  "name": "meanies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "source .variables && nodemon",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linnterweb/MEANies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Linnterweb/MEANies/issues"
+  },
+  "homepage": "https://github.com/Linnterweb/MEANies#readme",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-mysql-session": "^1.2.0",
+    "express-session": "^1.14.2",
+    "mysql": "^2.11.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "prerender": "^4.3.1",
+    "prerender-node": "^2.5.0",
+    "sendgrid": "^4.7.1",
+    "stripe": "^4.12.0"
+  }
+}

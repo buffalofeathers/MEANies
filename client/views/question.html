@@ -1,0 +1,25 @@
+<!--<div class="question" ng-mouseover="query()">?</div>-->
+<div>
+    <h1>{{ question.question }}-{{ question.id }}.{{ question.category }}</h1>
+</div>
+<ol type="A">
+    <li>{{ question.A }}</li>
+    <li>{{ question.B }}</li>
+    <li>{{ question.C }}</li>
+    <li>{{ question.D }}</li>
+</ol>
+
+<div>{{ question.Xcoord }}</div>
+<div>{{ question.Ycoord }}</div>
+
+<div style="left : {{ question.Xcoord }}%; top : {{ question.Ycoord }}%" class="black" ng-mouseover="query()"></div>
+
+
+
+<div class="credits">
+    <h2>Creative team at Depot/U Birmingham</h2>
+    <h3>Team Lead- Jeff Linn</h3>
+    <h3>MEANie- Jessie Payne</h3>
+    <h3>MEANie- Camille Parks</h3>
+    <h3>MEANie- Parrish Holley</h3>
+</div>

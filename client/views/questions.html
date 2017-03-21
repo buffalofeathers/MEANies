@@ -1,0 +1,9 @@
+<div class="question" ng-mouseover="query()">?</div>
+<div ng-repeat="question in question">
+    <div ng-model="ID" ng-click="toggleDetails()">
+        <div value="{{ question.id }}"><h1>{{ question.id }}</h1></div></div>
+    <h1>{{ question.question }}</h1>
+    <a href="questions/{{ question.id }}">Lets play a little game</a>
+    <div style="left : {{ question.Xcoord }}%; top : {{ question.Ycoord }}%" class="black"></div>
+</div>
+

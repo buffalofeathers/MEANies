@@ -1,0 +1,381 @@
+@import url('http://getbootstrap.com/2.3.2/assets/css/bootstrap.css');
+@import url('http://getbootstrap.com/2.3.2/assets/css/bootstrap-responsive.css');
+@import url('http://fonts.googleapis.com/css?family=Roboto:400');
+@font-face {
+   font-family: Arcadepix;
+   src: url(/images/assets/arcadepix/ARCADEPI.TTF);
+}
+
+
+/*.question {
+    width: 50px;
+}*/
+
+.mario {
+    position: absolute;
+    top: 68%;
+    left: 7%;
+    height: 30px;
+    max-height: 4%;
+    z-index: 2;
+}
+
+#map {
+    position:relative;
+    display: inline;
+}
+
+#counter {
+    position: relative;
+    /*display: inline;*/
+    /*width: auto;
+    height: auto;*/
+}
+
+#dot {
+    position:absolute;
+    left:14%;
+    top:73%;
+    height: 15px;
+    max-height: 2%;
+    max-width: 2%;
+    z-index: 1;
+}
+
+
+
+/*Login and Create User Page Styling Start*/
+
+body {
+  background-color:#fff;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+
+.logo {
+    position: relative;
+    top: 1%;
+    left: 1%;
+    /*position: fixed;*/
+    /*top: 0%;
+    left: 0%;*/
+}
+
+.login-container {
+    padding: 25px;
+    position: fixed;
+    background: url('images/temp-bg.jpg') no-repeat center fixed;
+    background-size: cover;
+    /*padding: 0;*/
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#letsplay {
+    position: relative;
+    left: 20%;
+    width: 60%;
+    min-width:60%;
+}
+
+.form-login {
+    position: absolute;
+    background-color: goldenrod;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+    color: white;
+    top: 30%;
+    left: 35%;
+    width: 30%;
+    box-shadow: -5px 5px 40px rgba(0,0,0, .7);
+}
+
+.loginBtn {
+    background-color: transparent;
+    border: none;
+    width: 100px;
+}
+
+.logoutBtn {
+    background-color: transparent;
+    border: none;
+    width: 120px;
+}
+
+.newuserBtn {
+    background-color: transparent;
+    border: none;
+    width: 140px;
+}
+
+.contBtn {
+    background-color: transparent;
+    border: none;
+    width: 140px;
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+    text-align: center;
+    /*height: 500px;
+    font-size: medium;*/
+}
+
+#userName {
+    height: 30px;
+    font-size: x-large;
+}
+
+#userPassword {
+    height: 30px;
+    font-size: x-large;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+/*Login Page Styling End*/
+
+#saveBtn {
+    background-color: transparent;
+    border: none;
+    width: 200px;
+}
+
+#new-firstname {
+    height: 30px;
+    font-size: x-large;
+}
+
+#new-lastname {
+    height: 30px;
+    font-size: x-large;
+}
+
+#new-email {
+    height: 30px;
+    font-size: x-large;
+}
+
+#new-password {
+    height: 30px;
+    font-size: x-large;
+}
+
+#new-username {
+    height: 30px;
+    font-size: x-large;
+}
+
+/*Create User Page Styling End*/
+
+/*Board Styling Start*/
+
+#door {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    height: 2.5%;
+    width: 2.5%;
+    z-index: 0;
+}
+
+#mongo {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 35%;
+    left: 20.2%;
+    text-align: center;
+    z-index: 0;
+}
+
+#express {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 35%;
+    left: 30%;
+    text-align: center;
+    z-index: 0;
+}
+
+#angular {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 35%;
+    left: 40%;
+    text-align: center;
+    z-index: 0;
+}
+
+#node {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+    z-index: 0;
+}
+
+/*Board Styling End*/
+
+.black {
+    position: absolute;
+    background-color: black;
+    height: 20px;
+    width: 20px;
+}
+
+.mongo {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 37%;
+    left: 20%;
+    text-align: center;
+    z-index: 0;
+}
+
+/*NavBar Styling Start*/
+
+.mariologo {
+    height: 5%;
+    width: 5%;
+    margin-top: 2%;
+}
+
+.navbar {
+    /*margin-top: 15px;*/
+    background-color: tan;
+}
+
+.navbar .nav {
+    float: right;
+    margin-top: .3%;
+}
+
+/*.navbar-nav img {
+    height: 30px;
+}*/
+/*
+.moveover {
+    margin-left: 10%;
+}*/
+
+.navbar-brand {
+    padding: 0;
+}
+
+
+#loginNav {
+    height: 30px;
+}
+
+#logoutNav {
+    height: 27px;
+    margin-top: 4%;
+}
+
+/*NavBar Styling End*/
+
+
+#logo {
+    height: 3em;
+    width: 3em;
+    /*padding-top: 0.3em;*/
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    margin-top: 0.8em;
+    }
+
+.winner {
+    text-align: center;
+}
+
+.doge {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('images/doge.png');
+    /*background-size: cover;*/
+    opacity: 0.4;
+}
+
+.fireworks {
+    background: url('images/stars-1097821_960_720.png');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+    top: 10%;
+    left: -180px;
+    padding-right: 200%;
+  /*background-repeat: no-repeat;*/
+}
+/*
+.fireworks img {
+    height: 50px;
+    width: 50px;
+}*/
+
+.boss {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: Arcadepix;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.credits {
+  /*background: url("images/angrycpu1.jpeg");*/
+  position: absolute;
+  left: 25%;
+  top: 0;
+  height: 50%;
+  width: 50%;
+  animation: slideshow 15s linear;
+}
+@keyframes slideshow {
+  0%    { top: 100%; }
+  100%  { top: -150%; }
+}
+
+.subcredit {
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.win-header {
+    font-weight: bold;
+    text-align: left;
+    opacity: 0.99;
+    width: 25%;
+    left: 3%;
+    display: block;
+    margin-top: 8%;
+    position: absolute;
+    font-family: Arcadepix;
+    z-index: 4;
+}
